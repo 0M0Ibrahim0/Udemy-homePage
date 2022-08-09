@@ -1,0 +1,481 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.nav-bar {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  display: flex;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  z-index: 1;
+}
+
+.nav-bar div {
+  margin: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search-text {
+  position: relative;
+  height: 3.2rem;
+  border: 1px solid #1c1d1f;
+  border-radius: 99999px;
+  text-align: left;
+  padding-left: 44px;
+  background-color: #f7f9fa;
+  margin: 0 1.2rem;
+}
+
+.search-form {
+  display: flex;
+  flex-grow: 1;
+}
+
+.search-button {
+  position: absolute;
+  background-image: url("https://icon-library.com/images/google-search-icon/google-search-icon-13.jpg");
+  background-size: cover;
+  border-width: 0px;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  margin-left: 40px;
+  margin-top: 18px;
+}
+.udemy-logo img {
+  width: 91px;
+  height: 40;
+}
+
+.lang-btn {
+  width: 18px;
+}
+
+.cart img {
+  margin: 10px;
+  width: 30px;
+}
+i.fa-shopping-cart:hover {
+  color: #5624d0;
+}
+i.fa-search:hover {
+  color: #5624d0;
+}
+i.fa-bars:hover {
+  color: #5624d0;
+}
+
+i.fa-shopping-cart {
+  padding: 13px;
+  color: black;
+  font-size: 18px;
+}
+.search-form button img {
+  width: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.nav-bar div button {
+  background-color: white;
+  border: 0px;
+}
+
+.nav-bar div button a:hover {
+  cursor: pointer;
+  color: #5624d0;
+}
+
+.login {
+  border: 1px solid black;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 35px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #1c1d1f;
+  font-weight: bold;
+}
+
+.login:hover {
+  background-color: #f7f9fa;
+}
+
+.signup {
+  background-color: #1c1d1f;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 35px;
+}
+
+.signup a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.signup:hover {
+  background-color: black;
+}
+
+.lang-logo {
+  border: 1px solid black;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  padding-top: 10px;
+}
+.categories {
+  padding-left: 10px;
+}
+.categories button:hover {
+  color: #5624d0;
+}
+.lang-logo:hover {
+  background-color: #f7f9fa;
+}
+
+.small-nav {
+  display: none;
+  align-items: left;
+  justify-content: left;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.small-udemy-logo img {
+  width: 100px;
+  height: auto;
+}
+.icons {
+  display: flex;
+}
+.small-udemy-logo {
+  flex-grow: 1;
+  margin-left: 17px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 1100px) {
+  .business {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  div.teach {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .small-nav {
+    display: flex;
+  }
+}
+
+.alarm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alarm {
+  position: relative;
+}
+.alarm-p {
+  padding: 35px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 8%), 0 4px 4px rgb(0 0 0 / 8%);
+  background-color: white;
+  width: 350px;
+  height: 150px;
+}
+.small-alarm-img {
+  display: none;
+}
+@media only screen and (max-width: 1500px) {
+  .alarm img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: initial;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .alarm-img {
+    display: none;
+  }
+  .small-alarm-img {
+    display: flex;
+  }
+  .alarm-p {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 370px;
+  }
+  .shadow {
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 7%), 0px 3px 3px rgb(0 0 0 / 7%);
+  }
+}
+.courses {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.courses ul {
+  display: flex;
+}
+.courses ul li {
+  margin: 10px;
+  font-size: 1.1rem;
+  font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  font-weight: 600;
+}
+.courses-block {
+  margin-top: 44px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.6rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.courses-block p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+}
+.words {
+  width: 870px;
+  max-width: 100%;
+  height: 100px;
+}
+.words p {
+  display: block !important;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 1.6rem;
+}
+.courses-list {
+  position: relative;
+  margin-left: 7px;
+  margin-top: 5px;
+  width: 1400px;
+  padding: 44px;
+  border: 1px solid rgb(188, 188, 188);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 2px 6px rgb(0 0 0 / 8%);
+}
+.courses-list h4 {
+  font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+}
+.courses-list img {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+.courses-list a {
+  text-decoration: none;
+  color: black;
+  font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+}
+.python-explore {
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 1px solid black;
+  color: black !important;
+  padding: 0.7em 0.85em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.python-explore:hover {
+  background-color: aliceblue;
+}
+.courses-list ul {
+  max-width: 100%;
+  display: flex;
+  margin-top: 40px;
+  margin-left: -10px;
+}
+.courses-list li {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+}
+figcaption {
+  margin-top: 5px;
+}
+.author,
+.rating-numbers {
+  color: gray;
+  font-size: 0.8rem;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+.rate {
+  font-size: medium;
+  font-weight: 500;
+  color: #b4690e;
+}
+.cnt {
+  font-size: small;
+  color: #83869c;
+}
+@media only screen and (max-width: 1500px) {
+  .courses {
+    justify-content: left;
+    align-items: left;
+    margin: 10px 36px;
+  }
+  .courses-block {
+    width: 100%;
+  }
+  .courses-list {
+    width: 90.5%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .item-5 a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .item-4 a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .item-3 a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .item-2 a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .words {
+    display: none;
+  }
+  .python-explore {
+    display: none;
+  }
+  .courses-list h4 {
+    display: none;
+  }
+  .courses-list ul {
+    margin-top: 0px;
+  }
+}
+.course-bar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.course-bar li {
+  margin: 0 1em 0 0;
+  font-weight: bold;
+  color: gray;
+}
+
+.course-bar .active {
+  color: black;
+}
+.course-title,
+.course-price {
+  display: block;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+.rating {
+  color: #b4690e;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.rating i {
+  color: #e59819;
+}
+.courses-summary {
+  margin-left: 10px;
+}
+.bestseller {
+  margin-top: 20px;
+  background-color: rgb(236, 235, 152);
+  color: rgb(61, 60, 10);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline;
+}
+footer {
+  margin-top: 50px;
+  height: 70px;
+  background-color: black;
+}
+
+footer .udemy-logo-black {
+  width: 100px;
+  margin: 10px 20px;
+}
