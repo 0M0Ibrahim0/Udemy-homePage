@@ -1,3 +1,4 @@
+load_courses("");
 let search_box = document.querySelector('.search-text');
 let search_button = document.querySelector('.search-button');
 let filter_text = localStorage.getItem("filter_text");
@@ -15,22 +16,24 @@ search_box.addEventListener('input', word => {
 search_button.addEventListener('click', save_local);
 
 // function to load courses contain {text} if empty load all courses
-function load_courses(text) {
-  document.querySelector(".courses-ads").innerHTML = '';
+function load_courses(text, sub = "python") {
+  document.querySelector(".carousel-inner").innerHTML = '';
   fetch('../images and logos/courses.json')
     .then((response) => response.json())
     .then((json) => {
       let courses = document.querySelector('.courses-list');
       // update course title
       let sectionTitle = courses.querySelector('.sectionTitle');
-      sectionTitle.textContent = json['about'][0]['sectionTitle'];
+      sectionTitle.textContent = json[sub][0]['about'][0]['sectionTitle'];
 
       // update course Description 
       let courseDesc = courses.querySelector('.words');
-      courseDesc.querySelector('.desc').textContent = json['about'][0]['courseDesc'];
+      courseDesc.querySelector('.desc').textContent = json[sub][0]['about'][0]['courseDesc'];
 
       // update course content
-      for (const item of json['courses']) {
+      // document.querySelector(".courses-grid-carousel-inner").innerHTML = '';
+      let all_courses = []
+      for (const item of json[sub][0]['courses']) {
         const img = item['image'];
         const title = item['title'];
         const author = item['author'];
@@ -39,7 +42,7 @@ function load_courses(text) {
         const price = item['price'];
         let course_item =
           `
-          <li class="item">
+          <div class="cards col">
             <a href="#">
               <figure>
                 <img src="${img}" alt="Python">
@@ -67,11 +70,24 @@ function load_courses(text) {
                 <div class="course-price">${price}</div>
               </figure>
             </a>
-          </li>
+          </div>
           `
         if (text == '' || title.toLowerCase().includes(filter_text.toLowerCase()))
-          document.querySelector(".courses-ads").innerHTML += course_item;
+          all_courses.push(course_item);
+        // document.querySelector(".courses-ads").innerHTML += course_item;
+      }
+      let item = `<div class="carousel-item row active">`;
+      for(let i = 0; i < all_courses.length; i++)
+      {
+        item += all_courses[i];
+        // console.log(all_courses[i]);
+        if((i+1)%5 == 0 || i+1 == all_courses.length)
+        {
+          item += `</div>`
+          document.querySelector(".carousel-inner").innerHTML += item;
+          //console.log(document.querySelector(".carousel-inner").innerHTML);
+          item = `<div class="carousel-item row">`
+        }
       }
     });
 }
-load_courses(filter_text);
