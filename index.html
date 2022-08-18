@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udemy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <header class="nav-bar">
+    <div class="udemy-logo">
+      <a href="index.html"><img src="../images and logos/udemy-logo.svg" alt="Udemy"></a>
+    </div>
+
+    <div class="categories">
+      <nav>
+        <button>Categories</button>
+      </nav>
+    </div>
+
+    <div class="search-form">
+      <form class="search-form">
+        <input class="search-form search-text" type="text" placeholder="Search for anything">
+        <button type="submit" class='search-button'></button>
+      </form>
+    </div>
+
+    <div class="business"><button><a href="index.html">Udemy Business</a></button></div>
+    <div class="teach"><button><a href="index.html">Teach on Udemy</a></button></div>
+
+    <div class="cart">
+      <a href="index.html"><i class="fa fa-shopping-cart"></i></a>
+    </div>
+
+    <div class="login">
+      <a href="https://www.udemy.com/join/login-popup">Log in</a>
+    </div>
+
+    <div class="signup">
+      <a href="https://www.udemy.com/join/signup-popup">Sign up</a>
+    </div>
+
+    <div class="lang-logo">
+      <button><img class="lang-btn" src="../images and logos/world-grid.png" alt="language"></button>
+    </div>
+  </header>
+  <!-- Nav Bar End -->
+
+  <!-- Small Nav Bar -->
+  <nav class="nav-bar small-nav">
+    <div class="bars">
+      <button><i class="fa fa-bars" style="font-size: 25px;"></i></button>
+    </div>
+    <div class="small-udemy-logo">
+      <a href="index.html"><img src="../images and logos/udemy-logo.svg" alt="Udemy"></a>
+    </div>
+
+    <div class="icons">
+      <div>
+        <button><i class="fa fa-search" style="font-size: 25px;"></i></button>
+      </div>
+      <div>
+        <button><i class="fa fa-shopping-cart" style="font-size: 25px;"></i></button>
+      </div>
+    </div>
+  </nav>
+  <!-- Small Nav Bar End -->
+
+  <!-- Alarm -->
+  <section class="alarm">
+    <div class="shadow">
+      <img src="../images and logos/alarm.PNG" class="alarm-img" alt="Alarm">
+      <img src="../images and logos/small-alarm.PNG" class="small-alarm-img" alt="Alarm">
+      <div class="alarm-p">
+        <h1>New to Udemy? Lucky you.</h1>
+        <p>Courses start at E£169.99. Get your new-<br>student offer before it expires.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Alarm End -->
+
+  <!-- Courses -->
+  <section class="courses">
+    <div class="courses-block">
+      <h1 class="courses-summary">A broad selection of courses</h1>
+      <p class="courses-summary">
+        Choose from 185,000 online video courses with new additions published every month
+      </p>
+      <div>
+        <ul class="course-bar nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="text-dark nav-link active" id="python-tab" data-bs-toggle="tab" data-bs-target="#python"
+              type="button" role="tab" aria-controls="python" aria-selected="true">Python</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="text-dark nav-link" id="Excel-tab" data-bs-toggle="tab" data-bs-target="#Excel" type="button"
+              role="tab" aria-controls="Excel" aria-selected="true">Excel</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="text-dark nav-link" id="Web-Development-tab" data-bs-toggle="tab"
+              data-bs-target="#Web-Development" type="button" role="tab" aria-controls="Web-Development"
+              aria-selected="false">Web Development</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="text-dark nav-link" id="JavaScript-tab" data-bs-toggle="tab" data-bs-target="#JavaScript"
+              type="button" role="tab" aria-controls="JavaScript" aria-selected="false">JavaScript</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="text-dark nav-link" id="Data-Science-tab" data-bs-toggle="tab" data-bs-target="#Data-Science"
+              type="button" role="tab" aria-controls="Data-Science" aria-selected="false">Data Science</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="text-dark nav-link" id="AWS-Certification-tab" data-bs-toggle="tab"
+              data-bs-target="#AWS-Certification" type="button" role="tab" aria-controls="AWS-Certification"
+              aria-selected="false">AWS Certification</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="text-dark nav-link" id="Drawing-tab" data-bs-toggle="tab" data-bs-target="#Drawing"
+              type="button" role="tab" aria-controls="Drawing" aria-selected="false">Drawing</button>
+          </li>
+        </ul>
+        <!--  -->
+        <!--  -->
+      </div>
+      <div class="courses-list">
+        <h4 class="sectionTitle"></h4>
+        <div class="words">
+          <p class="desc">
+          </p>
+        </div>
+
+        <div><a href="#" class="python-explore">Explore Python</a></div>
+
+        <div id="carouselExampleControls" class="carousel slide row" data-interval="false">
+          <div class="carousel-inner row">
+
+          </div>
+          <button class="carousel-control-prev bg-black" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next bg-black" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Courses End -->
+
+  <br> <br>
+
+  <!-- top categories -->
+  <section class="mx-5">
+    <h1>Top Categories</h1>
+    <br>
+    <div class="categories-container">
+      <div class="row">
+        <div class="container-sm col-md-4 col-lg-3">
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg" />
+          <div class="course-description">
+            <figcaption>Design</figcaption>
+          </div>
+        </div>
+        <div class="container-sm col-md-4 col-lg-3">
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg" />
+          <div class="course-description">
+            <figcaption>Development</figcaption>
+          </div>
+        </div>
+        <div class="container-sm col-md-4 col-lg-3">
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg" />
+          <div class="course-description">
+            <figcaption>Marketing</figcaption>
+          </div>
+        </div>
+        <div class="container-sm col-md-4 col-lg-3">
+          <img class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg" />
+          <div class="course-description">
+            <figcaption>IT and Software</figcaption>
+          </div>
+        </div>
+        <div class="container-sm col-md-4 col-lg-3">
+          <img class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-2x-v2.jpg" />
+          <div class="course-description">
+            <figcaption>Personal Development</figcaption>
+          </div>
+        </div>
+        <div class="container-sm col-md-4 col-lg-3">
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-business-2x-v2.jpg" />
+          <div class="course-description">
+            <figcaption>Business</figcaption>
+          </div>
+        </div>
+        <div class="container-sm col-md-4 col-lg-3">
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-2x-v2.jpg" />
+          <div class="course-description">
+            <figcaption>Photography</figcaption>
+          </div>
+        </div>
+        <div class="container-sm col-md-4 col-lg-3">
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-music-2x-v2.jpg" />
+          <div class="course-description">
+            <figcaption>Music</figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="featured-topics-section">
+    <h1>Featured topics by category</h1>
+    <div class="topics">
+      <div class="topic">
+        <h2>Development</h2>
+        <a href="#">Python</a>
+        <div class="author topic-students">36,034,020 students</div>
+        <a href="#">Web Development</a>
+        <div class="author topic-students">11,254,675 students</div>
+        <a href="#">Machine Learning</a>
+        <div class="author topic-students">6,993,353 students</div>
+      </div>
+      <div class="topic">
+        <h2>Business</h2>
+        <a href="#">Financial Analysis</a>
+        <div class="author topic-students">1,196,820 students</div>
+        <a href="#">SQL</a>
+        <div class="author topic-students">5,863,213 students</div>
+        <a href="#">PMP</a>
+        <div class="author topic-students">1,709,238 students</div>
+      </div>
+      <div class="topic">
+        <h2>IT and Software</h2>
+        <a href="#">AWS Certification</a>
+        <div class="author topic-students">5,923,566 students</div>
+        <a href="#">Ethical Hacking</a>
+        <div class="author topic-students">10,791,025 students</div>
+        <a href="#">Cyber Security</a>
+        <div class="author topic-students">3,935,715 students</div>
+      </div>
+      <div class="topic">
+        <h2>Design</h2>
+        <a href="#">Photoshop</a>
+        <div class="author topic-students">10,822,087 students</div>
+        <a href="#">Graphic Design</a>
+        <div class="author topic-students">3,345,182 students</div>
+        <a href="#">Drawing</a>
+        <div class="author topic-students">2,450,013 students</div>
+      </div>
+    </div>
+    <button class="topics-btn explore-btn">Explore more topics</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img class="udemy-logo-black" src="../images and logos/udemy-logo-black.svg" alt="Udemy">
+  </footer>
+  <!-- Footer End -->
+  <script type="module" src="load_courses.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
